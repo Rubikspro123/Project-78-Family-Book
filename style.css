@@ -1,0 +1,26 @@
+button{
+   border: solid;
+   font-size: 23;
+   font-family: fantasy;
+   padding-bottom: 3;
+   padding-left: 10;
+   padding-top: 3;
+   padding-right: 10;
+   border-color: darkblue;
+   background-color: darkcyan;
+   color: lightskyblue;
+   transition: transform.2s;
+}  
+button:hover{
+    transform: scale(0.9);
+}
+img{
+    border: solid;
+    border-radius: 10px;
+    border-width: 4px;
+    border-color:mediumblue;
+    background-color: limegreen;
+}
+body{
+    background-color: lightskyblue;
+}

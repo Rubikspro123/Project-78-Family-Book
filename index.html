@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            Project C78
+        </title>
+
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+    </head>
+    <body>
+        <center style="margin-top: 40px;">
+            <h1>
+                My Family Book
+            </h1>
+
+            <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" id="family_member_image" width="200px" height="250px">
+            <h4 id="family_member_name"></h4>
+            <button id="button" onclick="update()">Next</button>
+        </center>
+    </body>
+
+        <script>
+            var images = ["https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg","https://www.engdict.com/data/dict/media/images_public/babyb-00083277637334686859399882_normal.png", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp0vpvaruIOX24cDAyNIiFv19iFrxZK0qbzw&usqp=CAU" , "https://www.engdict.com/data/dict/media/images_public/fathe-00085778_normal.png", "https://www.engdict.com/data/dict/media/images_public/mothe-00043926637316387655519405_normal.png", "https://thumbs.dreamstime.com/z/good-relationship-neighbor-male-friendly-greeting-illustration-82564341.jpg"];
+            var names = ["Family Book","Brother", "Sister","Father", "Mother", "Neighbours"];
+            var i = 0;
+            function update()
+            {
+                i++;
+                var numbers_of_family_member_in_array = 5
+                if(i > numbers_of_family_member_in_array)
+                  {
+                      i = 0;
+                  }
+                
+                //Debug the code to store list of images in updatedImage. Use images[i]
+                var updatedImage =images[i];
+                //Debug the code to store list of names in updatedName. Use names[i]
+                var updatedName = names[i] ;
+                document.getElementById("family_member_image").src= updatedImage;
+                document.getElementById("family_member_name").innerHTML = updatedName;
+            }
+            </script>
+    
+</html>
